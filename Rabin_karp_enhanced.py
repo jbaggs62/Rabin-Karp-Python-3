@@ -10,8 +10,8 @@ def Search(txt, pat, l):
         return
     hpattern = hash(pat);
     for i in range(n - m + 1):
-        hs = hash(txt[i:i + m])
-        if hs == hpattern:
+        hashstring = hash(txt[i:i + m])
+        if hashstring == hpattern:
             if txt[i:i + m] == pat:
                 l.append(txt)
                 break
