@@ -36,9 +36,9 @@ titles_lists = titles["fixed_titles"]
 tuple_titles = tuple(titles_lists)
 
 
-new_list =[]
-for x in titles_lists:
-    if "machine" in x:
-        new_list.append(x)
-print(new_list)
-print(len(new_list))
+# new_list =[]
+# for x in titles_lists:
+#     if "machine" in x:
+#         new_list.append(x)
+# print(new_list)
+# print(len(new_list))
