@@ -22,7 +22,6 @@ def rk_search(pat, txt, q, list):
     # Calculate hash value for pattern and text
     for i in range(m):
         p = (d * p + ord(pat[i])) % q
-        #print("This is i value and the txt and pattetn %s %s %s", (i,text,pattern))
         t = (d*t + ord(txt[i])) % q
 
 
@@ -37,7 +36,7 @@ def rk_search(pat, txt, q, list):
 
             j += 1
             if j == m:
-                #print("Pattern is found at position: " + str(i+1))
+                #append string found to list
                 list.append(txt)
                 break
 
